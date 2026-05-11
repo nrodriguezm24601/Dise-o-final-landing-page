@@ -307,6 +307,27 @@
             }
         });
 
+        // Active nav link indicator
+        function setActiveNavLink() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-links a');
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-active');
+                const href = link.getAttribute('href');
+                const linkPage = href.split('/').pop();
+
+                if ((currentPage === '' || currentPage === 'index.html') && href === '#inicio') {
+                    link.classList.add('nav-active');
+                } else if (linkPage === currentPage) {
+                    link.classList.add('nav-active');
+                }
+            });
+        }
+
+        setActiveNavLink();
+        window.addEventListener('hashchange', setActiveNavLink);
+
         // Typewriter animation
         const typewriterElements = document.querySelectorAll('.typewriter');
         const observerOptions = {
