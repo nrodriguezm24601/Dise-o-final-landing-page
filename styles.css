@@ -2790,6 +2790,14 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.formulario-disclaimer {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
 .documentos-form {
     display: flex;
     flex-direction: column;
