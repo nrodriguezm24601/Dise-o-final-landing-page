@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocio - Aló Credit Colombia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <a href="index.html" class="navbar-logo-link">
+                    <img src="LogoNav.png" alt="Aló Credit" class="navbar-logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="negocio.html">Para tu negocio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="paga.html">Paga tu cuota</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="navbar-buttons">
+                <a href="#" class="btn-navbar btn-navbar-primary">Descarga Nuestra App</a>
+                <a href="#" class="btn-navbar btn-navbar-secondary">Plataforma Estudio</a>
+            </div>
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="negocio.html">Negocio</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="index.html#paga">Paga tu cuota</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="mobile-buttons">
+            <a href="#" class="btn-navbar btn-navbar-primary">Descarga Nuestra App</a>
+            <a href="#" class="btn-navbar btn-navbar-secondary">Plataforma Estudio</a>
+        </div>
+    </div>
+
+    <!-- Hero Section - Ofrece crédito en tu tienda -->
+    <section class="hero-negocio-section">
+        <div class="container">
+            <div class="negocio-hero-content">
+                <h1>Ofrece crédito en tu tienda. <span class="negocio-orange">Vende más, sin riesgo para ti.</span></h1>
+                <p>Únete a la red de comercios aliados de <span class="negocio-orange">Aló Credit</span> y aumenta tus ventas sin complicaciones.</p>
+                <button class="btn btn-hero" onclick="const element = document.querySelector('.formulario-box h3'); const y = element.getBoundingClientRect().top + window.pageYOffset - 150; window.scrollTo({top: y, behavior: 'smooth'})"><span style="color: white;">Sé parte de</span> <span style="color: white;">Aló Credit</span> <span class="arrow" style="color: white;">→</span></button>
+            </div>
+            <div class="negocio-hero-image">
+                <img src="Imagen hero negocio.png" alt="Hero Negocio" class="negocio-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Alianzas Estratégicas Section -->
+    <section class="alianzas-section">
+        <div class="container">
+            <div class="alianzas-grid">
+                <div class="alianzas-left">
+                    <h2>Alianzas <span class="alianzas-orange">estratégicas</span><br>con los actores que<br>lideran el sector móvil</h2>
+                </div>
+                <div class="alianzas-right">
+                    <div class="alianzas-list">
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Samsung ImagiQ.</p>
+                        </div>
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Samsung SMS.</p>
+                        </div>
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Samsung CEM.</p>
+                        </div>
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Movistar.</p>
+                        </div>
+                    </div>
+                    <div class="alianzas-list">
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Mega Guay.</p>
+                        </div>
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Team Comunicaciones.</p>
+                        </div>
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>Celupanter.</p>
+                        </div>
+                        <div class="alianzas-item">
+                            <span class="alianzas-dot">✓</span>
+                            <p>CHACAM.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Por qué convertirnos en aliado? Section -->
+    <section class="por-que-section">
+        <div class="container">
+            <h2>¿Por qué convertirte en aliado de <span class="por-que-orange">Aló Credit?</span></h2>
+            <div class="por-que-grid">
+                <div class="por-que-card por-que-card-featured">
+                    <div class="por-que-icon">💻</div>
+                    <h3 class="por-que-card-title-orange">Crédito 100% digital</h3>
+                    <p class="por-que-card-text-medium">Aprueba solicitudes de manera segura, sin papeleo.</p>
+                </div>
+                <div class="por-que-card por-que-card-featured">
+                    <div class="por-que-icon">🤝</div>
+                    <h3 class="por-que-card-title-orange">Apoyo experto</h3>
+                    <p class="por-que-card-text-medium">Un asesor te acompaña en cada paso para impulsar tus ventas.</p>
+                </div>
+                <div class="por-que-card por-que-card-featured">
+                    <div class="por-que-icon">📅</div>
+                    <h3 class="por-que-card-title-orange">Pagos flexibles</h3>
+                    <p class="por-que-card-text-medium">Opciones de pago adaptadas al ritmo de tu negocio.</p>
+                </div>
+                <div class="por-que-card por-que-card-featured">
+                    <div class="por-que-icon">🎁</div>
+                    <h3 class="por-que-card-title-orange">Material para tu negocio</h3>
+                    <p class="por-que-card-text-medium">Recibe piezas listas para promocionar créditos en tu punto de venta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentos Requeridos Section -->
+    <section class="documentos-section">
+        <div class="container">
+            <div class="documentos-grid">
+                <div class="documentos-left">
+                    <h2>Documentos<br>requeridos para<br>el proceso de<br>afiliación</h2>
+                    <ul class="documentos-list">
+                        <li>Registro de Cámara de Comercio.</li>
+                        <li>Registro Único Tributario (RUT)</li>
+                        <li>Documento de identidad válido,<br>Cédula de extranjería,<br>Permiso de protección temporal (PPT)</li>
+                        <li>Cuenta bancaria a nombre del titular o del negocio</li>
+                    </ul>
+                </div>
+                <div class="documentos-right">
+                    <div class="formulario-box" id="formulario">
+                        <h3>Diligencia el formulario</h3>
+                        <p class="formulario-subtexto">Un asesor se pondrá en contacto contigo para continuar con el proceso de vinculación.</p>
+                        <form class="documentos-form">
+                            <input type="text" placeholder="Nombre del propietario" required>
+                            <input type="text" placeholder="Nombre del negocio" required>
+                            <input type="tel" placeholder="Número telefónico" required>
+                            <input type="email" placeholder="Correo electrónico" required>
+                            <input type="text" placeholder="NIT del comercio" required>
+                            <input type="text" placeholder="Dirección del comercio" required>
+                            <button type="submit" class="btn btn-primary">Enviar Solicitud <span class="arrow">→</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mouse Cursor Icon -->
+    <div class="mouse-light" id="mouseLight">👆</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Logo footer1.png" alt="Aló Credit" class="footer-logo-img">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Navegar</h3>
+                        <ul>
+                            <li><a href="#inicio">Vincula tu tienda</a></li>
+                            <li><a href="#credito">Crédito Celulares</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#politica">Política de tratamiento de datos</a></li>
+                            <li><a href="#terminos">Términos y condiciones de uso</a></li>
+                            <li><a href="#retracto">Derecho de Retracto.</a></li>
+                            <li><a href="#pqrs">Formulario de PQRS.</a></li>
+                            <li><a href="#cookies">Política de cookies.</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contáctanos</h3>
+                        <ul>
+                            <li><a href="#terminos">Términos y condiciones (cuotas catorcenales)</a></li>
+                            <li><a href="#sacrilaft">Política SACRILAFT</a></li>
+                            <li><a href="#etica">Línea ética</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Síguenos en:</h3>
+                        <ul>
+                            <li><a href="#whatsapp">WhatsApp Atención</a></li>
+                            <li><a href="#radique">Radique sus Peticiones, Quejas y Reclamos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Redes Sociales</h3>
+                        <ul>
+                            <li><a href="#instagram">Instagram</a></li>
+                            <li><a href="#facebook">Facebook</a></li>
+                            <li><a href="#tiktok">TikTok</a></li>
+                            <li><a href="#youtube">Youtube</a></li>
+                            <li><a href="#linkedin">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Aló Credit Colombia S.A.S. · NIT 901.546.410-9 · Cra. 7 # 32-29, Bogotá, Colombia · Vigilada Superintendencia de Industria y Comercio · Todos los derechos reservados · Alo credit. co</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerMenu.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const isClickInsideNav = event.target.closest('.navbar') || event.target.closest('.mobile-menu');
+            if (!isClickInsideNav && mobileMenu.classList.contains('active')) {
+                hamburgerMenu.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Mouse light effect - Gradient interaction only
+        const mouseLight = document.getElementById('mouseLight');
+        const footer = document.querySelector('.footer');
+
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            // Check if mouse is over footer
+            const footerRect = footer.getBoundingClientRect();
+            const isOverFooter = mouseY >= footerRect.top;
+
+            // Move the cursor icon
+            mouseLight.style.left = mouseX + 'px';
+            mouseLight.style.top = mouseY + 'px';
+
+            // Show cursor icon always
+            mouseLight.style.opacity = '1';
+            document.body.style.cursor = 'auto';
+        });
+    </script>
+</body>
+</html>

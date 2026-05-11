@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Aló Credit Colombia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <a href="index.html" class="navbar-logo-link">
+                    <img src="LogoNav.png" alt="Aló Credit" class="navbar-logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="negocio.html">Para tu negocio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="paga.html">Paga tu cuota</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="navbar-buttons">
+                <a href="#" class="btn-navbar btn-navbar-primary">Descarga Nuestra App</a>
+                <a href="#" class="btn-navbar btn-navbar-secondary">Plataforma Estudio</a>
+            </div>
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="negocio.html">Para tu negocio</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="paga.html">Paga tu cuota</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="mobile-buttons">
+            <a href="#" class="btn-navbar btn-navbar-primary">Descarga Nuestra App</a>
+            <a href="#" class="btn-navbar btn-navbar-secondary">Plataforma Estudio</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-paga-section" id="inicio">
+        <div class="container">
+            <div class="hero-content hero-content-centered">
+                <div>
+                    <h1 class="hero-paga-title">Conoce nuestros canales de atención oficiales</h1>
+                    <p class="hero-disclaimer">Selecciona tu medio preferido para comunicarte con nosotros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contacto-section">
+        <div class="container">
+            <div class="contacto-grid">
+                <!-- Left Side: Contact Methods -->
+                <div class="contacto-left" data-parallax="0.02">
+                    <div class="horarios-box">
+                        <h3>Horarios de atención:</h3>
+                        <p class="horarios-subtitle">Lunes a viernes 8:00 AM - 6:00 PM<br>Domingues Servicios automatizados</p>
+                    </div>
+
+                    <div class="canales-contacto">
+                        <button class="btn-phone">
+                            <span class="canal-icon">☎️</span>
+                            <p>Atención al Cliente Aló Credit</p>
+                        </button>
+                        <button class="btn-app">
+                            <span class="canal-icon">📱</span>
+                            <p>Descarga nuestra App</p>
+                        </button>
+                        <button class="btn-business">
+                            <span class="canal-icon">🏪</span>
+                            <p>Vende con Aló Credit</p>
+                        </button>
+                        <button class="btn-twitter">
+                            <span class="canal-icon">📱</span>
+                            <p>@alocreditco</p>
+                        </button>
+                        <button class="btn-tiktok">
+                            <span class="canal-icon">🎵</span>
+                            <p>@Aló Credit Colombia</p>
+                        </button>
+                        <button class="btn-instagram">
+                            <span class="canal-icon">📸</span>
+                            <p>@alocreditco</p>
+                        </button>
+                        <button class="btn-youtube">
+                            <span class="canal-icon">▶️</span>
+                            <p>@alocreditco</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Side: PQRS Form -->
+                <div class="contacto-right" data-parallax="0.02">
+                    <div class="formulario-pqrs">
+                        <h3>Radicación de peticiones, quejas, Reclamos, Sugerencias y felicitaciones (PQRS)</h3>
+
+                        <form class="pqrs-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nombre Completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Número de documento" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Teléfono" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Selecciona una opción" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Descripción" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-options">
+                                <label>
+                                    <input type="checkbox"> Seleccionar archivo
+                                </label>
+                                <button type="button" class="btn-upload">📎</button>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="acepto-terminos" required>
+                                <label for="acepto-terminos">Acepto el tratamiento de mis datos personales según la</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar <span class="arrow">→</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Logo footer1.png" alt="Aló Credit" class="footer-logo-img">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Navegar</h3>
+                        <ul>
+                            <li><a href="#inicio">Vincula tu tienda</a></li>
+                            <li><a href="#credito">Crédito Celulares</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#politica">Política de tratamiento de datos</a></li>
+                            <li><a href="#terminos">Términos y condiciones de uso</a></li>
+                            <li><a href="#retracto">Derecho de Retracto.</a></li>
+                            <li><a href="#pqrs">Formulario de PQRS.</a></li>
+                            <li><a href="#cookies">Política de cookies.</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contáctanos</h3>
+                        <ul>
+                            <li><a href="#terminos">Términos y condiciones (cuotas catorcenales)</a></li>
+                            <li><a href="#sacrilaft">Política SACRILAFT</a></li>
+                            <li><a href="#etica">Línea ética</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Síguenos en:</h3>
+                        <ul>
+                            <li><a href="#whatsapp">WhatsApp Atención</a></li>
+                            <li><a href="#radique">Radique sus Peticiones, Quejas y Reclamos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Redes Sociales</h3>
+                        <ul>
+                            <li><a href="#instagram">Instagram</a></li>
+                            <li><a href="#facebook">Facebook</a></li>
+                            <li><a href="#tiktok">TikTok</a></li>
+                            <li><a href="#youtube">Youtube</a></li>
+                            <li><a href="#linkedin">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Aló Credit Colombia S.A.S. · NIT 901.546.410-9 · Cra. 7 # 32-29, Bogotá, Colombia · Vigilada Superintendencia de Industria y Comercio · Todos los derechos reservados · Alo credit. co</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerMenu.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const isClickInsideNav = event.target.closest('.navbar') || event.target.closest('.mobile-menu');
+            if (!isClickInsideNav && mobileMenu.classList.contains('active')) {
+                hamburgerMenu.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Parallax effect
+        const parallaxElements = document.querySelectorAll('[data-parallax]');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            parallaxElements.forEach(element => {
+                const speed = element.getAttribute('data-parallax') || 0.5;
+                const offset = -scrollY * speed;
+                element.style.transform = `translateY(${offset}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
