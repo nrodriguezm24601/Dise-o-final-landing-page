@@ -328,6 +328,20 @@ body {
     }
 }
 
+.hero-disclaimer {
+    text-align: center;
+    padding: 0 40px 3rem 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-disclaimer p {
+    font-size: 0.75rem;
+    color: #999999;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* Hero Section - Conocenos */
 .hero-conocenos-section {
     padding: 250px 0 150px 0;
