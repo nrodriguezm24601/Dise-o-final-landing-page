@@ -338,8 +338,11 @@ body {
     padding: 15px 0 2rem 0;
     max-width: 100%;
     margin: 0;
-    grid-column: 1 / -1;
     width: 100%;
+}
+
+.hero-index-section .hero-disclaimer {
+    grid-column: 1 / -1;
 }
 
 .hero-disclaimer p {
