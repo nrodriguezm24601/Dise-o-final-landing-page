@@ -64,18 +64,18 @@
         </div>
     </section>
 
-    <!-- Payment Methods Section -->
+    <!-- Payment Methods Section - Online Payments -->
     <section class="paga-metodos paga-metodos-1">
         <div class="container">
             <div class="metodos-grid">
-                <div class="card-app-alo" data-parallax="0.02">
+                <div class="card-app-alo">
                     <div class="metodo-logo">
                         <img src="Logo Aló1.png" alt="App Aló" class="metodo-img">
                     </div>
                     <h3>App Aló</h3>
                     <p>Ingresando a pagos</p>
                 </div>
-                <div class="card-pse card-pse-recomendado" data-parallax="0.02">
+                <div class="card-pse card-pse-recomendado">
                     <span class="badge-recomendado">RECOMENDADO</span>
                     <div class="metodo-logo">
                         <img src="logo-pse 1.png" alt="PSE" class="metodo-img">
@@ -83,19 +83,27 @@
                     <h3>Pagos en línea</h3>
                     <p>PSE</p>
                 </div>
-                <div class="card-bancolombia" data-parallax="0.02">
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section - Correspondents -->
+    <section class="paga-metodos paga-metodos-2">
+        <div class="container">
+            <div class="metodos-grid">
+                <div class="card-bancolombia">
                     <h3>Corresponsal<br>Bancolombia</h3>
                     <p>Convenio 92380</p>
                 </div>
                 <h2 class="paga-title-secondary">Acércate a uno de estos lugares</h2>
-                <div class="card-efecty" data-parallax="0.02">
+                <div class="card-efecty">
                     <div class="metodo-logo">
                         <img src="Logo efecty.png" alt="Efecty" class="metodo-img">
                     </div>
                     <h3>Efecty</h3>
                     <p>Convenio 112978</p>
                 </div>
-                <div class="card-puntored" data-parallax="0.02">
+                <div class="card-puntored">
                     <div class="metodo-logo">
                         <img src="Puntored 1.png" alt="PuntoRed" class="metodo-img">
                     </div>
@@ -219,19 +227,6 @@
 
         setActiveNavLink();
         window.addEventListener('hashchange', setActiveNavLink);
-
-        // Parallax effect
-        const parallaxElements = document.querySelectorAll('[data-parallax]');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-
-            parallaxElements.forEach(element => {
-                const speed = element.getAttribute('data-parallax') || 0.5;
-                const offset = -scrollY * speed;
-                element.style.transform = `translateY(${offset}px)`;
-            });
-        });
     </script>
 </body>
 
