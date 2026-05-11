@@ -58,6 +58,9 @@
                 <p>Únete a la red de comercios aliados de <span class="negocio-orange">Aló Credit</span> y aumenta tus ventas sin complicaciones.</p>
                 <button class="btn btn-hero" onclick="const element = document.querySelector('.formulario-box h3'); const y = element.getBoundingClientRect().top + window.pageYOffset - 150; window.scrollTo({top: y, behavior: 'smooth'})"><span style="color: white;">Sé parte de</span> <span style="color: white;">Aló Credit</span> <span class="arrow" style="color: white;">→</span></button>
             </div>
+            <div class="hero-disclaimer">
+                <p>*Aplica para financiamiento de equipos celulares y tecnología. Sujeto a estudio, validación y aprobación individual. Tasas y condiciones sujetas al perfil del solicitante. Ver términos y condiciones vigentes en www.alocredit.co</p>
+            </div>
             <div class="negocio-hero-image">
                 <img src="Imagen hero negocio.png" alt="Hero Negocio" class="negocio-hero-img">
             </div>
@@ -268,6 +271,27 @@
                 mobileMenu.classList.remove('active');
             }
         });
+
+        // Active nav link indicator
+        function setActiveNavLink() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-links a');
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-active');
+                const href = link.getAttribute('href');
+                const linkPage = href.split('/').pop();
+
+                if ((currentPage === '' || currentPage === 'index.html') && (href === '#inicio' || href === 'index.html#inicio')) {
+                    link.classList.add('nav-active');
+                } else if (linkPage === currentPage) {
+                    link.classList.add('nav-active');
+                }
+            });
+        }
+
+        setActiveNavLink();
+        window.addEventListener('hashchange', setActiveNavLink);
 
         // Mouse light effect - Gradient interaction only
         const mouseLight = document.getElementById('mouseLight');

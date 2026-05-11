@@ -131,6 +131,11 @@ body {
     color: #FF7D00;
 }
 
+.nav-links a.nav-active {
+    color: #FF7D00;
+    font-weight: 700;
+}
+
 .navbar-buttons {
     display: flex;
     gap: 1rem;
@@ -307,7 +312,7 @@ body {
 
 /* Hero Section - Index */
 .hero-index-section {
-    padding: 200px 30px 150px 0;
+    padding: 200px 30px 20px 0;
     background: url('Degradado fondo1.png') no-repeat center -15px/100% 100%;
     position: relative;
     overflow: hidden;
@@ -317,27 +322,29 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
     padding-left: 120px;
     padding-right: 120px;
 }
 
 @media (min-width: 1067px) {
     .hero-index-section {
-        padding: 250px 30px 150px 0;
+        padding: 250px 30px 20px 0;
     }
 }
 
 .hero-disclaimer {
     text-align: center;
-    padding: 0 40px 3rem 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 15px 0 2rem 0;
+    max-width: 100%;
+    margin: 0;
+    grid-column: 1 / -1;
+    width: 100%;
 }
 
 .hero-disclaimer p {
     font-size: 0.75rem;
-    color: #999999;
+    color: #000000;
     line-height: 1.5;
     margin: 0;
 }
@@ -2324,6 +2331,7 @@ body {
 .hero-negocio-section .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 3rem;
     align-items: center;
     padding-left: 120px;
