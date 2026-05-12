@@ -4001,3 +4001,99 @@ body {
 .btn-download-simple .arrow {
     font-size: 1.2rem;
 }
+
+/* Cookies Modal Styles */
+.cookies-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    max-width: 500px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.cookies-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cookies-content {
+    text-align: center;
+}
+
+.cookies-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.cookies-content p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.cookies-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-reject,
+.btn-accept {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-reject {
+    background-color: #E0E0E0;
+    color: var(--text-dark);
+}
+
+.btn-reject:hover {
+    background-color: #D0D0D0;
+}
+
+.btn-accept {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-accept:hover {
+    background-color: #F5751A;
+}
+
+@media (max-width: 768px) {
+    .cookies-modal {
+        max-width: 85%;
+        padding: 1.5rem;
+    }
+
+    .cookies-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .cookies-buttons {
+        flex-direction: column;
+    }
+
+    .btn-reject,
+    .btn-accept {
+        width: 100%;
+    }
+}
