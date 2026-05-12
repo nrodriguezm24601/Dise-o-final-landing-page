@@ -3910,3 +3910,46 @@ body {
         font-size: 0.85rem;
     }
 }
+
+/* Download Button Styles */
+.politica-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.politica-download p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.btn-download-simple {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 32px;
+    background-color: #FA8514;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-download-simple:hover {
+    background-color: #E6751A;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(250, 133, 20, 0.3);
+}
+
+.btn-download-simple .arrow {
+    font-size: 1.2rem;
+}
