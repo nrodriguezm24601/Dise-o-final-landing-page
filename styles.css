@@ -3947,6 +3947,54 @@ body {
 .btn-download-simple:hover {
     background-color: #E6751A;
     transform: translateY(-2px);
+}
+
+.politica-orange-box {
+    background-color: white;
+    color: var(--text-dark);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    border: 2px solid #FA8514;
+}
+
+.politica-orange-box h2 {
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.politica-orange-box h3 {
+    color: var(--text-dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.politica-orange-box p {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.politica-orange-box ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.politica-orange-box li {
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    line-height: 1.8;
+}
+
+.politica-orange-box a {
+    color: #FA8514;
+    text-decoration: underline;
+}
     box-shadow: 0 8px 16px rgba(250, 133, 20, 0.3);
 }
 
