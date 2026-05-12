@@ -68,21 +68,21 @@
     <section class="paga-metodos paga-metodos-1">
         <div class="container">
             <div class="metodos-grid">
-                <div class="card-app-alo">
+                <a href="https://play.google.com/store/apps/details?id=com.alocredit&hl=es" target="_blank" class="card-app-alo" style="text-decoration: none;">
                     <div class="metodo-logo">
                         <img src="Logo Aló1.png" alt="App Aló" class="metodo-img">
                     </div>
                     <h3>App Aló</h3>
                     <p>Ingresando a pagos</p>
-                </div>
-                <div class="card-pse card-pse-recomendado">
+                </a>
+                <a href="https://pagos.alocredit.co/" target="_blank" class="card-pse card-pse-recomendado" style="text-decoration: none;">
                     <span class="badge-recomendado">RECOMENDADO</span>
                     <div class="metodo-logo">
                         <img src="logo-pse 1.png" alt="PSE" class="metodo-img">
                     </div>
                     <h3>Pagos en línea</h3>
                     <p>PSE</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -92,18 +92,18 @@
         <h2 class="paga-title-secondary">Acércate a uno de estos lugares</h2>
         <div class="container">
             <div class="metodos-grid">
-                <div class="card-bancolombia">
+                <div class="card-bancolombia" onclick="copyToClipboard('92380', this)" style="cursor: pointer;">
                     <h3>Corresponsal<br>Bancolombia</h3>
                     <p>Convenio 92380</p>
                 </div>
-                <div class="card-efecty">
+                <div class="card-efecty" onclick="copyToClipboard('112978', this)" style="cursor: pointer;">
                     <div class="metodo-logo">
                         <img src="Logo efecty.png" alt="Efecty" class="metodo-img">
                     </div>
                     <h3>Efecty</h3>
                     <p>Convenio 112978</p>
                 </div>
-                <div class="card-puntored">
+                <div class="card-puntored" onclick="copyToClipboard('Aló Credit', this)" style="cursor: pointer;">
                     <div class="metodo-logo">
                         <img src="Puntored 1.png" alt="PuntoRed" class="metodo-img">
                     </div>
@@ -181,6 +181,19 @@
     </footer>
 
     <script>
+        // Copy to clipboard functionality
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = element.innerHTML;
+                element.innerHTML = '<p style="color: #4CAF50; font-weight: bold;">¡Número copiado!</p>';
+                setTimeout(() => {
+                    element.innerHTML = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Error al copiar:', err);
+            });
+        }
+
         // Hamburger menu functionality
         const hamburgerMenu = document.getElementById('hamburgerMenu');
         const mobileMenu = document.getElementById('mobileMenu');
