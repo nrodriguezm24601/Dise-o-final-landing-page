@@ -1320,7 +1320,7 @@ body {
     position: relative;
     z-index: 2;
     max-width: 1150px;
-    margin: 3rem auto 0;
+    margin: 5rem auto 0;
 }
 
 @media (max-width: 1024px) {
@@ -1355,9 +1355,9 @@ body {
 
 .alo-card-image {
     background: linear-gradient(var(--gradient-angle), #FFD9B8 0%, #FFE5CC 100%);
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 1.2rem;
     text-align: center;
-    min-height: 200px;
+    min-height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1406,29 +1406,29 @@ body {
 }
 
 .alo-card-img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     object-fit: contain;
 }
 
 .alo-card-content {
-    padding: 2rem;
+    padding: 1.8rem 1.2rem;
     text-align: left;
 }
 
 .alo-card h3 {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--secondary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .alo-card p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .process-block {
