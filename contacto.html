@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Aló Credit Colombia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-content">
             <div class="navbar-logo">
-                <a href="index" class="navbar-logo-link">
+                <a href="index.html#inicio" class="navbar-logo-link">
                     <img src="LogoNav.png" alt="Aló Credit" class="navbar-logo-img">
                 </a>
             </div>
@@ -57,7 +60,8 @@
                 <div>
                     <h1 class="hero-paga-title">Conoce nuestros canales de atención oficiales</h1>
                     <p class="hero-disclaimer">Selecciona tu medio preferido para comunicarte con nosotros.</p>
-                    <p class="hero-disclaimer-small">Canales sujetos a disponibilidad operativa. Para productos de crédito aplican términos y condiciones.</p>
+                    <p class="hero-disclaimer-small">Canales sujetos a disponibilidad operativa. Para productos de
+                        crédito aplican términos y condiciones.</p>
                 </div>
             </div>
         </div>
@@ -71,7 +75,8 @@
                 <div class="contacto-left" data-parallax="0.02">
                     <div class="horarios-box">
                         <h3>Horarios de atención:</h3>
-                        <p class="horarios-subtitle">Lunes a viernes 8:00 AM - 6:00 PM<br>Domingues Servicios automatizados</p>
+                        <p class="horarios-subtitle">Lunes a viernes 8:00 AM - 6:00 PM<br>Domingues Servicios
+                            automatizados</p>
                     </div>
 
                     <div class="canales-contacto">
@@ -140,7 +145,10 @@
 
                             <div class="form-checkbox">
                                 <input type="checkbox" id="acepto-terminos" required>
-                                <label for="acepto-terminos">Acepto el tratamiento de mis datos personales según la</label>
+                                <label for="acepto-terminos">Acepto el tratamiento de mis datos personales según la
+                                    <a href="#" onclick="openPolicyModal(event)"
+                                        style="color: #FA8514; text-decoration: none;">politica de tratamiento de
+                                        datos</a></label>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Enviar <span class="arrow">→</span></button>
@@ -150,6 +158,79 @@
             </div>
         </div>
     </section>
+
+    <!-- Policy Modal -->
+    <div id="policyModal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; overflow-y: auto;">
+        <div
+            style="background-color: white; margin: 40px auto; padding: 40px; border-radius: 1rem; max-width: 600px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);">
+            <button onclick="closePolicyModal()"
+                style="float: right; background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+            <h2 style="color: #1A1A1A; margin-bottom: 20px;">Política de Tratamiento de Datos</h2>
+            <div style="color: #333; line-height: 1.6; font-size: 14px; max-height: 600px; overflow-y: auto;">
+                <p>Dando cumplimiento a las disposiciones de la Ley 1581 de 2012, por la cual se dictan normas generales
+                    para la protección de datos personales, el Decreto 1377 de 2013 y demás normas que las modifiquen,
+                    sustituyan o adicionen, teniendo en cuenta que tales normas tienen por objeto desarrollar el derecho
+                    constitucional que tienen las personas a conocer, actualizar y rectificar la información personal
+                    que se haya recogido sobre ellas en bases de datos o archivos físicos o digitales, con la entrega de
+                    mis datos personales mediante el anterior formulario, autorizo a ALO CREDIT COLOMBIA S.A.S (en
+                    adelante Alo Credit identificada con NIT 901.546.410-9 para que realice el tratamiento de mis datos
+                    personales públicos, privados o semiprivados bajo las siguientes finalidades:</p>
+
+                <h3 style="color: #FA8514; margin-top: 15px;">Finalidades del Tratamiento</h3>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Atención al ciudadano/cliente (Gestión PQR):</strong> Recepción y gestión de
+                        requerimientos internos o externos sobre productos o servicios. Realizar la recepción, atención,
+                        trámite y respuesta de peticiones, quejas, reclamos, sugerencias o felicitaciones.</li>
+                    <li><strong>Fidelización de clientes:</strong> Desarrollar estrategias de fidelización y retención
+                        de clientes mediante el envío de comunicaciones, beneficios y promociones.</li>
+                    <li><strong>Gestión de estadísticas internas:</strong> Recolectar, procesar y analizar información
+                        con fines estadísticos internos.</li>
+                    <li><strong>Procedimientos administrativos:</strong> Adelantar los trámites administrativos
+                        necesarios para el cumplimiento de obligaciones legales, contractuales o institucionales.</li>
+                    <li><strong>Envío de comunicaciones:</strong> Contactar al titular de la información por medios
+                        físicos, electrónicos o telefónicos.</li>
+                    <li><strong>Gestión administrativa:</strong> Realizar actividades de planeación, organización y
+                        control de procesos internos.</li>
+                    <li><strong>Gestión de Bienes y Servicios:</strong> Adquisición, administración, mantenimiento y
+                        control de bienes y servicios.</li>
+                    <li><strong>Gestión de clientes:</strong> Administrar la información de los clientes y usuarios.
+                    </li>
+                    <li><strong>Gestión de cobros y pagos:</strong> Ejecutar procesos de facturación, recaudo y pagos.
+                    </li>
+                    <li><strong>Gestión económica y contable:</strong> Registrar y reportar operaciones económicas y
+                        financieras.</li>
+                    <li><strong>Gestión fiscal:</strong> Cumplir con obligaciones tributarias y fiscales.</li>
+                    <li><strong>Históricos de relaciones comerciales:</strong> Conservar registros para trazabilidad y
+                        auditoría.</li>
+                    <li><strong>Verificación de datos y referencias:</strong> Validar la veracidad de la información
+                        suministrada.</li>
+                    <li><strong>Verificación de requisitos jurídicos, técnicos y/o financieros:</strong> Revisar
+                        cumplimiento de requisitos exigidos.</li>
+                    <li><strong>Cumplimiento/incumplimiento de obligaciones financieras:</strong> Registrar y reportar
+                        el cumplimiento de obligaciones.</li>
+                    <li><strong>Gestión de tarjetas de crédito y similares:</strong> Administrar productos financieros.
+                    </li>
+                    <li><strong>Prestación de servicios de solvencia patrimonial y crédito:</strong> Realizar consultas
+                        y evaluaciones de capacidad financiera.</li>
+                </ul>
+
+                <h3 style="color: #FA8514; margin-top: 15px;">Derechos del Titular</h3>
+                <p>El titular puede conocer la Política de Tratamiento de Datos Personales aplicable y ejercer los
+                    derechos de acceso, consulta, corrección o supresión de datos o de revocación de la autorización o
+                    de reclamo por infracción sobre sus datos, mediante un escrito dirigido a ALO CREDIT COLOMBIA S.A.S
+                    a la dirección de correo electrónico <a href="mailto:hola@alocredit.co" target="_blank" style="color: #FA8514; text-decoration: none;"><strong>hola@alocredit.co</strong></a> indicando en el asunto el
+                    derecho que desea ejercitar, o mediante correo ordinario remitido a la dirección <strong>Carrera 7 #
+                        32-29 Piso 9</strong>.</p>
+
+                <p style="margin-top: 15px;">La política de tratamiento a la que se encuentran sujetos los datos
+                    personales se podrá consultar en la página web <a href="politica.html" style="color: #FA8514; text-decoration: none;">Política de tratamiento de datos</a> o acceder a través
+                    del siguiente correo electrónico: <a href="mailto:hola@alocredit.co" target="_blank" style="color: #FA8514; text-decoration: none;"><strong>hola@alocredit.co</strong></a></p>
+            </div>
+            <button onclick="closePolicyModal()"
+                style="margin-top: 20px; padding: 10px 20px; background-color: #FA8514; color: white; border: none; border-radius: 0.5rem; cursor: pointer; font-size: 14px;">Cerrar</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <!-- Footer -->
@@ -185,7 +266,8 @@
                             <li><a href="terminos-cuotas.html">Términos y condiciones (cuotas catorcenales)</a></li>
                             <li><a href="dlc.html">DLC - Términos y condiciones</a></li>
                             <li><a href="#etica">Línea ética</a></li>
-                            <li><a href="pqrs-procedimiento.html">Procedimiento para el tratamiento de peticiones, quejas y reclamos</a></li>
+                            <li><a href="pqrs-procedimiento.html">Procedimiento para el tratamiento de peticiones,
+                                    quejas y reclamos</a></li>
                             <li><a href="privacidad.html">Política de Privacidad</a></li>
                         </ul>
                     </div>
@@ -193,7 +275,8 @@
                     <div class="footer-section">
                         <h3>Contacto</h3>
                         <ul>
-                            <li><a href="https://api.whatsapp.com/send/?phone=573243679591&text&type=phone_number&app_absent=0" target="_blank">WhatsApp Atención</a></li>
+                            <li><a href="https://api.whatsapp.com/send/?phone=573243679591&text&type=phone_number&app_absent=0"
+                                    target="_blank">WhatsApp Atención</a></li>
                             <li><a href="contacto.html">Radique sus Peticiones, Quejas y Reclamos</a></li>
                         </ul>
                     </div>
@@ -202,9 +285,11 @@
                         <h3>Redes Sociales</h3>
                         <ul>
                             <li><a href="https://www.instagram.com/alocreditcol" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.facebook.com/people/Al%C3%B3-Credit-Colombia/61578189384117/?rdid=NAInuY7lux11YVNs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BWmMSH9h4%2F" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.facebook.com/people/Al%C3%B3-Credit-Colombia/61578189384117/?rdid=NAInuY7lux11YVNs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BWmMSH9h4%2F"
+                                    target="_blank">Facebook</a></li>
                             <li><a href="https://www.tiktok.com/@alocreditco" target="_blank">TikTok</a></li>
-                            <li><a href="https://www.youtube.com/channel/UCNp1XvaAcFgbTgi-TPwkvpQ" target="_blank">Youtube</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCNp1XvaAcFgbTgi-TPwkvpQ"
+                                    target="_blank">Youtube</a></li>
                             <li><a href="https://co.linkedin.com/company/alocredit" target="_blank">LinkedIn</a></li>
                         </ul>
                     </div>
@@ -212,12 +297,30 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© 2026 Aló Credit Colombia S.A.S. · NIT 901.546.410-9 · Cra. 7 # 32-29, Bogotá, Colombia · Vigilada Superintendencia de Industria y Comercio · Todos los derechos reservados · Alo credit. co</p>
+                <p>© 2026 Aló Credit Colombia S.A.S. · NIT 901.546.410-9 · Cra. 7 # 32-29, Bogotá, Colombia · Vigilada
+                    Superintendencia de Industria y Comercio · Todos los derechos reservados · Alo credit. co</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Policy Modal functionality
+        function openPolicyModal(event) {
+            event.preventDefault();
+            document.getElementById('policyModal').style.display = 'block';
+        }
+
+        function closePolicyModal() {
+            document.getElementById('policyModal').style.display = 'none';
+        }
+
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('policyModal');
+            if (event.target === modal) {
+                closePolicyModal();
+            }
+        });
+
         // Hamburger menu functionality
         const hamburgerMenu = document.getElementById('hamburgerMenu');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -280,4 +383,5 @@
         });
     </script>
 </body>
+
 </html>
