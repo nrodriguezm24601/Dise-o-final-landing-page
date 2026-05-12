@@ -599,32 +599,112 @@ body {
 /* Payment Methods Section */
 .paga-metodos {
     padding: 50px 30px;
-    background-color: #F9F9F9;
 }
 
 .paga-metodos-1 {
-    display: flex;
-    justify-content: center;
     padding: 50px 30px 0 30px;
-}
-
-.paga-metodos-1 .container {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-.paga-metodos-1 .metodos-grid {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
+    background-color: #F9F9F9;
 }
 
 .paga-metodos-2 {
-    padding: 0 30px 50px 30px;
+    background-color: #F9F9F9;
 }
+
+.paga-metodos-2 .metodos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.paga-metodos-1 .metodos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.paga-metodos-1 .card-app-alo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.paga-metodos-1 .card-pse {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+@media (max-width: 768px) {
+    .paga-metodos-1 {
+        padding: 40px 20px 0 20px;
+    }
+
+    .paga-metodos-1 .metodos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 289.734px;
+        margin: 0 auto;
+    }
+
+    .paga-metodos-1 .card-app-alo,
+    .paga-metodos-1 .card-pse {
+        grid-column: 1;
+        grid-row: auto;
+        min-height: 140px;
+        width: 100%;
+        max-width: 289.734px;
+    }
+}
+
+@media (max-width: 600px) {
+    .paga-metodos-1 .metodos-grid {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .paga-metodos-1 {
+        padding: 30px 16px 0 16px;
+    }
+
+    .paga-metodos-1 .metodos-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .paga-metodos-1 .card-app-alo {
+        grid-column: 1;
+        grid-row: auto;
+        order: 1;
+        min-height: 120px;
+        border-radius: 1rem;
+        padding: 1rem 0.8rem;
+    }
+
+    .paga-metodos-1 .card-pse {
+        grid-column: 1;
+        grid-row: auto;
+        order: 2;
+        min-height: 120px;
+        border-radius: 1rem;
+        padding: 1rem 0.8rem;
+    }
+
+    .paga-metodos-1 .card-app-alo h3,
+    .paga-metodos-1 .card-pse h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .paga-metodos-1 .card-app-alo p,
+    .paga-metodos-1 .card-pse p {
+        font-size: 0.8rem;
+    }
+}
+
+
 
 .metodos-grid {
     display: grid;
@@ -663,7 +743,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 289.734px;
+    width: 100%;
+    max-width: 289.734px;
     height: 140px;
 }
 
@@ -688,17 +769,24 @@ body {
     grid-row: 1;
 }
 
-.card-bancolombia {
+.paga-metodos-2 .card-bancolombia,
+.paga-metodos-2 .card-efecty,
+.paga-metodos-2 .card-puntored {
+    flex: 0 0 auto;
+    width: 280px;
+}
+
+.paga-metodos-1 .card-bancolombia {
     grid-column: 1;
     grid-row: 3;
 }
 
-.card-efecty {
+.paga-metodos-1 .card-efecty {
     grid-column: 2;
     grid-row: 3;
 }
 
-.card-puntored {
+.paga-metodos-1 .card-puntored {
     grid-column: 3;
     grid-row: 3;
 }
@@ -809,53 +897,46 @@ body {
     .card-pse,
     .card-efecty,
     .card-puntored {
+        width: 100%;
+        max-width: 289.734px;
         min-height: 140px;
     }
 }
 
 @media (max-width: 768px) {
-    .paga-metodos {
-        padding: 140px 20px;
+    .paga-metodos-2 {
+        padding: 40px 20px 0 20px;
     }
 
-    .metodos-grid {
+    .paga-metodos-1 .metodos-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        max-width: 289.734px;
+        margin: 0 auto;
     }
 
-    .card-app-alo {
-        grid-column: 1;
-        grid-row: auto;
-    }
-
-    .card-pse {
-        grid-column: 1;
-        grid-row: auto;
-    }
-
-    .card-bancolombia {
-        grid-column: 1;
-        grid-row: auto;
-        padding: 1rem 0.8rem;
-        min-height: 130px;
-    }
-
-    .card-efecty {
-        grid-column: 1;
-        grid-row: auto;
-    }
-
-    .card-puntored {
-        grid-column: 1;
-        grid-row: auto;
+    .paga-metodos-2 .metodos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 289.734px;
+        margin: 0 auto;
     }
 
     .card-app-alo,
     .card-pse,
+    .card-bancolombia,
     .card-efecty,
     .card-puntored {
+        width: 100%;
+        max-width: 289.734px;
         padding: 1rem 0.8rem;
-        min-height: 130px;
+        min-height: 140px;
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+
+    .card-bancolombia {
+        padding: 1rem 0.8rem;
     }
 
     .card-app-alo h3,
@@ -872,13 +953,13 @@ body {
 }
 
 @media (max-width: 480px) {
-    .paga-metodos {
-        padding: 60px 15px;
+    .paga-metodos-2 {
+        padding: 30px 16px;
     }
 
     .metodos-grid {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
+        gap: 1rem;
     }
 
     .card-app-alo {
@@ -923,11 +1004,14 @@ body {
 
     .card-app-alo,
     .card-pse,
+    .card-bancolombia,
     .card-efecty,
     .card-puntored {
+        width: 100%;
+        max-width: 289.734px;
         padding: 1rem 0.8rem;
         border-radius: 1rem;
-        min-height: 120px;
+        min-height: 140px;
     }
 
     .card-app-alo h3,
