@@ -449,6 +449,10 @@ body {
     overflow: hidden;
 }
 
+.hero-paga-section.no-gradient {
+    background: none;
+}
+
 .hero-paga-section .container {
     display: grid;
     grid-template-columns: 1fr;
