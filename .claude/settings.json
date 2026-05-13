@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\")",
+      "Bash(grep -E \"\\\\.html$\")",
+      "Bash(grep -n \"mouse-light\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\negocio.html\")",
+      "Bash(grep -n \"mouse-light\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\paga.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\paga.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\conocenos.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\contacto.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\politica.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\cookies.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\terminos.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\retracto.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\terminos-cuotas.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\privacidad.html\")",
+      "Bash(grep -n \"<footer\" \"c:\\\\\\\\Users\\\\\\\\nrodriguezm_alocredi\\\\\\\\Downloads\\\\\\\\Diseño final landing page\\\\\\\\pqrs-procedimiento.html\")"
+    ]
+  }
+}
