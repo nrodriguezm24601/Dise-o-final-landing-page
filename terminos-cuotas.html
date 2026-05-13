@@ -207,6 +207,18 @@
 
         setActiveNavLink();
         window.addEventListener('hashchange', setActiveNavLink);
+
+        // Handle PDF page navigation
+        const params = new URLSearchParams(window.location.hash.substring(1));
+        const pageParam = params.get('page');
+
+        if (pageParam) {
+            const pdfObject = document.querySelector('object[type="application/pdf"]');
+            if (pdfObject) {
+                const currentSrc = pdfObject.getAttribute('data');
+                pdfObject.setAttribute('data', currentSrc + '#page=' + pageParam);
+            }
+        }
     </script>
 </body>
 </html>
