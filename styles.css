@@ -4098,7 +4098,44 @@ body {
     background-color: #F5751A;
 }
 
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 998;
+}
+
+.floating-button-link {
+    display: block;
+    text-decoration: none;
+}
+
+.floating-button-img {
+    width: 100px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.15));
+    border-radius: 12px;
+}
+
+.floating-button-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
 @media (max-width: 768px) {
+    .floating-button {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .floating-button-img {
+        width: 80px;
+    }
+
     .cookies-modal {
         max-width: 85%;
         padding: 1.5rem;
