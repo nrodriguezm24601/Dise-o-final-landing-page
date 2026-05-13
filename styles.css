@@ -4128,7 +4128,7 @@ body {
 /* Opciones de Pago Section */
 .opciones-pago-block {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     margin: 5rem auto;
     padding: 4rem 3rem;
@@ -4178,6 +4178,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
 }
 
 .btn-pago:hover {
@@ -4189,13 +4190,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('Vision Pagofondo.png') no-repeat center/650px;
+    position: relative;
+    min-height: 500px;
+    margin-left: 2rem;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .opciones-pago-img {
     width: 100%;
-    max-width: 250px;
+    max-width: 600px;
     height: auto;
     object-fit: contain;
+    animation: float 3s ease-in-out infinite;
 }
 
 @media (max-width: 768px) {
@@ -4204,6 +4219,13 @@ body {
         gap: 2rem;
         padding: 2rem 1.5rem;
         background: url('Degradado pago.png') no-repeat center 60%/cover;
+        justify-items: center;
+    }
+
+    .opciones-pago-left {
+        width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     .opciones-pago-left h2 {
@@ -4217,28 +4239,39 @@ body {
     .btn-pago {
         padding: 0.6rem 1.5rem;
         font-size: 14px;
+        margin: 0 auto;
     }
 
     .opciones-pago-right {
         justify-content: center;
+        align-items: center;
         width: 100%;
+        background: url('Vision Pagofondo.png') no-repeat center/500px;
+        background-position: center;
+        margin-left: 0;
     }
 
     .opciones-pago-img {
-        max-width: 200px;
+        max-width: 500px;
         margin: 0 auto;
+        display: block;
     }
 }
 
 @media (max-width: 480px) {
     .opciones-pago-right {
         justify-content: center;
+        align-items: center;
         width: 100%;
+        background: url('Vision Pagofondo.png') no-repeat center/420px;
+        background-position: center;
+        margin-left: 0;
     }
 
     .opciones-pago-img {
-        max-width: 150px;
+        max-width: 420px;
         margin: 0 auto;
+        display: block;
     }
 }
 
