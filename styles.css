@@ -1068,7 +1068,7 @@ body {
 }
 
 .hero-index-title {
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 800;
     color: #102552;
     margin-bottom: 0.5rem;
@@ -3690,12 +3690,13 @@ body {
 .btn-email,
 .btn-twitter,
 .btn-tiktok,
+.btn-facebook,
 .btn-instagram,
 .btn-youtube {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     border: 2px solid var(--border-color);
     border-radius: 50px;
     background: white;
@@ -3710,6 +3711,7 @@ body {
 .btn-email:hover,
 .btn-twitter:hover,
 .btn-tiktok:hover,
+.btn-facebook:hover,
 .btn-instagram:hover,
 .btn-youtube:hover {
     border-color: var(--accent-color);
@@ -3724,6 +3726,7 @@ body {
 .btn-email:active,
 .btn-twitter:active,
 .btn-tiktok:active,
+.btn-facebook:active,
 .btn-instagram:active,
 .btn-youtube:active {
     transform: translateX(6px);
@@ -3746,6 +3749,7 @@ body {
 .btn-email p,
 .btn-twitter p,
 .btn-tiktok p,
+.btn-facebook p,
 .btn-instagram p,
 .btn-youtube p {
     font-size: 0.95rem;
