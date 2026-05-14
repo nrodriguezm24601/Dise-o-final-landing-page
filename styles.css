@@ -355,7 +355,19 @@ body {
     right: 0;
     width: 100%;
     margin-top: 0;
-    z-index: 10;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .hero-negocio-section .hero-disclaimer {
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-negocio-section .hero-disclaimer {
+        bottom: 0px;
+    }
 }
 
 .hero-disclaimer p {
@@ -2639,7 +2651,7 @@ body {
 
     .negocio-hero-image {
         order: 2;
-        margin-top: 2rem;
+        margin-top: 0.3125rem;
     }
 
     .negocio-hero-img {
@@ -2680,6 +2692,7 @@ body {
         padding: 40px 20px;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 20px;
     }
 
     .alianzas-grid {
